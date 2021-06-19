@@ -1,0 +1,62 @@
+[19:45:15] [Client thread/INFO]: Setting user: Player953
+[19:45:15] [Client thread/INFO]: (Session ID is token:0:Player953)
+[19:45:16] [Client thread/INFO]: LWJGL Version: 2.9.4
+[19:45:17] [Client thread/INFO]: Reloading ResourceManager: Default
+[19:45:17] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:45:17] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[19:45:17] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:45:17] [Thread-6/INFO]: OpenAL initialized.
+[19:45:18] [Sound Library Loader/INFO]: Sound engine started
+[19:45:22] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[19:45:40] [Server thread/INFO]: Starting integrated minecraft server version 1.8.8
+[19:45:40] [Server thread/INFO]: Generating keypair
+[19:45:40] [Server thread/INFO]: Preparing start region for level 0
+[19:45:41] [Server thread/INFO]: Changing view distance to 8, from 10
+[19:45:41] [Server thread/INFO]: Player953[local:E:851af120] logged in with entity id 70 at (2999562.366137785, 79.0, 2999999.698464068)
+[19:45:41] [Server thread/INFO]: Player953 joined the game
+[19:45:41] [Client thread/INFO]: [CHAT] A new §eOptiFine§f version is available: §eHD Ultra I7§f
+[19:45:42] [Client thread/FATAL]: Error executing task
+java.util.concurrent.ExecutionException: java.util.ConcurrentModificationException
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.minecraft.util.Util.func_181617_a(Util.java:20) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1098) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:425) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:113) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+Caused by: java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap$HashIterator.nextNode(HashMap.java:1584) ~[?:?]
+	at java.base/java.util.HashMap$KeyIterator.next(HashMap.java:1607) ~[?:?]
+	at net.minecraft.util.ClassInheritanceMultiMap.<init>(ClassInheritanceMultiMap.java:27) ~[bin/:?]
+	at net.minecraft.world.chunk.Chunk.<init>(Chunk.java:124) ~[bin/:?]
+	at net.minecraft.client.multiplayer.ChunkProviderClient.loadChunk(ChunkProviderClient.java:69) ~[bin/:?]
+	at net.minecraft.client.multiplayer.WorldClient.doPreChunk(WorldClient.java:160) ~[bin/:?]
+	at net.minecraft.client.network.NetHandlerPlayClient.handleMapChunkBulk(NetHandlerPlayClient.java:1345) ~[bin/:?]
+	at net.minecraft.network.play.server.S26PacketMapChunkBulk.processPacket(S26PacketMapChunkBulk.java:91) ~[bin/:?]
+	at net.minecraft.network.play.server.S26PacketMapChunkBulk.processPacket(S26PacketMapChunkBulk.java:1) ~[bin/:?]
+	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:15) ~[bin/:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at net.minecraft.util.Util.func_181617_a(Util.java:19) ~[bin/:?]
+	... 4 more
+[19:45:43] [Server thread/INFO]: Saving and pausing game...
+[19:45:43] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:45:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:45:44] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:46:11] [Server thread/INFO]: Saving and pausing game...
+[19:46:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:46:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:46:11] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:47:16] [Server thread/INFO]: Saving and pausing game...
+[19:47:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:47:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:47:16] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:47:17] [Client thread/INFO]: Stopping!
+[19:47:17] [Client thread/INFO]: SoundSystem shutting down...
+[19:47:17] [Server thread/INFO]: Stopping server
+[19:47:17] [Server thread/INFO]: Saving players
+[19:47:17] [Server thread/INFO]: Saving worlds
+[19:47:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Overworld
+[19:47:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/Nether
+[19:47:17] [Server thread/INFO]: Saving chunks for level 'mcpworld'/The End
+[19:47:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

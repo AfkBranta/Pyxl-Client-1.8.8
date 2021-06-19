@@ -1,0 +1,35 @@
+package pyxl.module.hud;
+
+import pyxl.Pyxl;
+import pyxl.module.Category;
+import pyxl.module.Module;
+import java.util.ArrayList;
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.opengl.GL11;
+import com.mojang.realmsclient.gui.ChatFormatting;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.FontRenderer;
+import net.minecraft.client.gui.ScaledResolution;
+
+public class FPS extends Module {
+	
+	public FPS() {
+        super("FPS", Keyboard.KEY_NONE, Category.HUD);
+    }
+	
+	private Minecraft mc = Minecraft.getMinecraft();
+	private FontRenderer font = mc.fontRendererObj;
+	
+	public void renderGameOverlay() {
+		/*GL11.glPushMatrix();
+		GL11.glScalef(1.5F, 1.5F, 1.5F);
+		font.drawString("Pyxl", 2, 2, 0xff1C4BE0);
+		GL11.glPopMatrix();*/
+		font.drawString("FPS: " + mc.getDebugFPS(), 2, 20, 0xff1C4BE0);
+	}
+	
+	public void onEnable() {
+		super.onEnable();
+		font.drawString("FPS: " + mc.getDebugFPS(), 2, 20, 0xff1C4BE0);
+	}
+}
